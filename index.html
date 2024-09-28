@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO₂ Reduction Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="counter">
+        <h1>CO₂ Reduction Counter</h1>
+        <div id="current-ppm">Current CO₂ ppm: <span id="ppm-value">420.000000</span></div>
+        <div id="co2-removed">Estimated CO₂ PPM Removed: <span id="co2-removed-display">0</span></div>
+        <input type="number" id="quantity" min="1" placeholder="Enter quantity of shirts">
+        
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1Pt3I9In52oBHUaHnFGncZId"
+          publishable-key="pk_live_51OPRO0In52oBHUaHQYu5fIBTEKUg9s2eQ3mHkzhk7TTqIs1GGshI6X81a6mYwDuOGYXh1Mgz7JN9UxdeeqjX6wgG00YMI3DhGM"
+        ></stripe-buy-button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
